@@ -1,0 +1,12 @@
+on:
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/setup-runner
+      - name: Check Linting and Formatting
+        run: |
+          pnpm lint:check & pnpm format:check

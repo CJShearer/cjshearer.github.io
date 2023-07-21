@@ -1,0 +1,15 @@
+build:
+  writeStats: true
+defaultContentLanguage: en
+disableKinds:
+  - RSS
+  - section
+  - sitemap
+  - taxonomy
+  - term
+enableEmoji: true
+enableRobotsTXT: true
+languageCode: en-us
+title: "Cody Shearer"
+Params:
+  faviconEmoji: 💼

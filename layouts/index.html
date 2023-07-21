@@ -1,0 +1,9 @@
+{{ $data := or (index .Site.Data .Site.Language.Lang).resume .Site.Data.resume }}
+{{ .Scratch.Set "data" $data }}
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head.html" . }}
+  <body class="mx-4 mb-2 mt-8 sm:mx-8">
+    {{ partial "resume/index.html" $data }}
+  </body>
+</html>
