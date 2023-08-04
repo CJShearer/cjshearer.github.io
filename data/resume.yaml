@@ -19,27 +19,26 @@ sections:
       - avatar: avatar.jpg
         description:
           - >
-            Hi, my name is Cody. I'm a software developer who is passionate
-            about building tooling to accelerate development of high quality
-            solutions.
+            Hi, I'm Cody, a software developer with a commitment to efficiency
+            and excellence. I'm passionate about enhancing the productivity of
+            those around me, whether through platform engineering, refactoring
+            to reduce complexity, or any other challenge offered by a full-stack
+            role.
+
           - >
-            Languages: JavaScript, Python, Java, C++
+            Rather than simply addressing immediate challenges, I take pride in
+            solving entire classes of problems, seeking to understand their root
+            causes and addressing them holistically.
+
           - >
-            Frameworks: [React-Native](https://reactnative.dev/),
-            [Express](https://expressjs.com/), [React](https://reactjs.org/),
-            [Svelte](https://svelte.dev/)
+            My toolbox includes `Git, React-Native, TypeScript, Golang, Vue,
+            Hugo, CircleCI, GitHub Actions, Fastlane, MySQL, MongoDB, Docker,
+            Auth0, `and` Stripe`. I'm also eagerly exploring `Rust` and
+            `WebAssembly` as a possible front-end replacement for TypeScript.
+
           - >
-            Testing: [Detox](https://wix.github.io/Detox/),
-            [Jest](https://jestjs.io/), [Mocha](https://mochajs.org/),
-            [Chai](https://www.chaijs.com/), [Sinon](https://sinonjs.org/)"
-          - >
-            Databases: [CouchDB](https://couchdb.apache.org/),
-            [MongoDB](https://www.mongodb.com/)
-          - >
-            Services: [Auth0](https://auth0.com/), [Stripe](https://stripe.com/)
-          - >
-            *I am not a ____________ programmer, I am a problem solver. These
-            skills are not my limits, they are my foundation.*
+            *I am more than a programmer; I am a problem solver. These tools are
+            not my limits, they are my foundation.*
 
   timeline:
     title: timeline
