@@ -4,7 +4,7 @@ header:
     last: Shearer
   titles:
     - Software Developer, Krumware
-    - B.S. Computer Science, UofSC
+    - B.S. Computer Science, USC
   email: cjshearer@live.com
   links:
     - svg: github
@@ -76,15 +76,15 @@ sections:
           start: 2017-08-17
           end: 2021-05-06
         title: >
-          [BS Computer Science](pdf/uofsc-diploma.pdf)
+          [BS Computer Science](pdf/usc-diploma.pdf)
         subtitle: Minor Mathematics
         icon: fa fa-file-pdf
         quote: >
           Founded in 1801, Columbia is the flagship research institution of the
-          UofSC System.
+          USC System.
         description:
           - >
-            My time at UofSC has been fundamental in my development as problem
+            My time at USC has been fundamental in my development as problem
             solver and developer. My favorite courses have been Artificial
             Intelligence and Machine Learning Systems.
           - >
