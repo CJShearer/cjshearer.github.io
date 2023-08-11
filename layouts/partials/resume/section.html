@@ -1,14 +1,12 @@
 <p
-  class="mb-8 border-b-2 border-dashed border-neutral-400 pb-2 pt-8  text-center text-3xl font-light capitalize"
+  class="mb-8 border-b-2 border-dashed border-neutral-400 pb-2 text-center text-3xl font-light capitalize"
 >
   {{ .title }}
 </p>
 {{ range .entries }}
-  <div
-    class="flex-column mb-12 flex flex-wrap gap-8 last-of-type:mb-24 sm:flex-nowrap"
-  >
+  <div class="flex-column mb-12 flex flex-wrap gap-8 md:flex-nowrap">
     <div
-      class="{{ cond (eq .avatar nil) `sm:w-[15rem]` `w-[15rem]` }} mx-auto min-w-[15rem] sm:mx-0"
+      class="{{ cond (eq .avatar nil) `md:w-[15rem]` `w-[15rem]` }} mx-auto min-w-[15rem] md:mx-0"
     >
       {{ with .avatar }}
         <div class="relative mx-auto h-52 w-52 overflow-hidden rounded-full">
@@ -43,14 +41,14 @@
     </div>
     <div class="flex-grow">
       {{ with .quote }}
-        <p class="m-3 hidden text-center italic sm:block">{{ . }}</p>
+        <p class="m-3 hidden text-center italic md:block">{{ . }}</p>
       {{ end }}
       {{ with .description }}
-        <ul>
-          {{ range $_, $item := . }}
-            <li class="mb-4 last:mb-0">{{ $item | markdownify }}</li>
-          {{ end }}
-        </ul>
+        <div
+          class="[&>*]:mt-4 first:[&>*]:mt-0 [&>ul>li]:pl-2 [&>ul]:mt-0 [&>ul]:list-['-'] [&>ul]:pl-2"
+        >
+          {{ . | markdownify }}
+        </div>
       {{ end }}
     </div>
   </div>
