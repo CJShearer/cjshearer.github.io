@@ -1,5 +1,10 @@
 build:
   writeStats: true
+  cacheBusters:
+    - source: (postcss|tailwind)\.config\.js
+      target: css
+    - source: assets/watching/hugo_stats.json
+      target: css
 defaultContentLanguage: en
 disableKinds:
   - RSS
@@ -10,6 +15,12 @@ disableKinds:
 enableEmoji: true
 enableRobotsTXT: true
 languageCode: en-us
+module:
+  mounts:
+    - source: assets
+      target: assets
+    - source: hugo_stats.json
+      target: assets/watching/hugo_stats.json
 title: "Cody Shearer"
 Params:
   faviconEmoji: 💼

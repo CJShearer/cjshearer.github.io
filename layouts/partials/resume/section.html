@@ -4,7 +4,9 @@
   {{ .title }}
 </p>
 {{ range .entries }}
-  <div class="flex-column mb-12 flex flex-wrap gap-8 md:flex-nowrap">
+  <div
+    class="flex-column mb-12 flex break-inside-avoid flex-wrap gap-8 md:flex-nowrap"
+  >
     <div
       class="{{ cond (eq .avatar nil) `md:w-[15rem]` `w-[15rem]` }} mx-auto min-w-[15rem] md:mx-0"
     >
@@ -18,17 +20,17 @@
         </div>
       {{ end }}
       {{ with .title }}
-        <p class="text-center text-2xl font-medium">
+        <p class="prose prose-invert text-center text-2xl font-medium">
           {{ . | markdownify }}
         </p>
       {{ end }}
       {{ with .name }}
-        <p class="text-center">
+        <p class="prose prose-invert text-center">
           {{ . | markdownify }}
         </p>
       {{ end }}
       {{ with .date }}
-        <p class="text-center text-neutral-400 ">
+        <p class="text-center">
           {{ time.Format "Jan 2006" .start }} -
           {{ if .end }}
             {{ time.Format "Jan 2006" .end }}
@@ -44,9 +46,7 @@
         <p class="m-3 hidden text-center italic md:block">{{ . }}</p>
       {{ end }}
       {{ with .description }}
-        <div
-          class="[&>*]:mt-4 first:[&>*]:mt-0 [&>ul>li]:pl-2 [&>ul]:mt-0 [&>ul]:list-['-'] [&>ul]:pl-2"
-        >
+        <div class="prose prose-invert">
           {{ . | markdownify }}
         </div>
       {{ end }}
