@@ -20,7 +20,6 @@ summary: |
   Software Developer with 3 Years of Experience in Full Stack Web and Mobile Development
 footer: |
   Fully typeset with HTML and CSS — see [github.com/cjshearer/cjshearer.dev](https://github.com/cjshearer/modern-hugo-resume)
-  Fully typeset with HTML and CSS — see [github.com/cjshearer/modern-hugo-resume](https://github.com/cjshearer/modern-hugo-resume)
 
 skills:
   - languages:
