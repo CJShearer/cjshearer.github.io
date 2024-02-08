@@ -15,24 +15,31 @@ disableKinds:
 enableEmoji: true
 enableRobotsTXT: true
 languageCode: en-us
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    parser:
+      attribute:
+        block: true
+        title: true
+      wrapStandAloneImageWithinParagraph: false
 module:
   mounts:
     - source: assets
       target: assets
     - source: hugo_stats.json
       target: assets/watching/hugo_stats.json
-    - source: data
-      target: data
-      excludeFiles: plaintextreplace/LICENSE
+    - source: node_modules/@fortawesome/fontawesome-free/svgs
+      target: assets/svgs
 mediaTypes:
-  application/text:
+  text/plain:
     suffixes:
       - txt
 outputFormats:
   TXT:
-    mediaType: "application/text"
-    baseName: "index"
+    mediaType: text/plain
+    baseName: index
     isPlainText: true
-title: "Cody Shearer"
 Params:
   faviconEmoji: 💼
