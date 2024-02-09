@@ -84,8 +84,8 @@ Full Stack Engineer with 3 years of Web and Mobile Experience
 
 {{<date-range start="2021-03-29" end="2023-10-20">}}
 
-- Collaborated in cross-functional team following agile (scrum) methodologies
-- Improved time-to-market by up to 20% with project templates
+- Worked in client-facing role on cross-functional Agile (Scrum) team
+- Accelerated time-to-market up to 20% with project templates
   - Improved documentation by generating server stubs, clients from OpenAPI spec
   - Improved onboarding and delivery with Docker and Docker Compose
   - Enabled rapid iteration with GitOps-driven CI/CD using GitHub Actions, CircleCI
