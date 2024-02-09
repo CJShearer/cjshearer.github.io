@@ -18,8 +18,7 @@ skills:
       - Java
       - C++
   - frameworks:
-      - React
-      - React-Native
+      - React/Native
       - Vue
       - Nuxt
       - Hugo
