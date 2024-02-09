@@ -114,16 +114,16 @@ Project Highlights:
 
 {{<date-range start="2020-08-01" end="2021-04-01">}}
 
-- Analyzed cross-platform performance behavior of deep-learning recommender system
-- Reproduced results from past research on highly configurable systems
-- Researched relevant works on causal inference and machine learning
+- Researched transfer learning, causal inference, and machine learning
+- Analyzed cross-platform performance of deep-learning recommender
+- Replicated prior research on highly configurable systems
 
 ### Software Developer – Intern, Velocity
 
 {{<date-range start="2018-06-01" end="2018-08-01">}}
 
-- Created AWS storage primitive abstracting cloud complexity for high level orchestration
 - Developed storage optimization solution for Amazon Elastic Block Storage
+- Developed AWS storage primitive for high level orchestration
 
 ## Projects
 
