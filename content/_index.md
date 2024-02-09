@@ -89,9 +89,10 @@ Full Stack Engineer with 3 years of Web and Mobile Experience
   - Streamlined delivery with GitOps-driven CI/CD using GitHub Actions, CircleCI
   - Improved maintainability through code generation from OpenAPI specifications
   - Boosted productivity and reliability with containerization technologies
-- Developed React app, React-Native app, Node servers for equipment manufacturer
-  - Created Bluetooth abstraction with data anomaly filtering, connection recovery
-  - Engineered data pipeline for real-time capture and display across applications
+- Developed cloud-native, multi-tenant SaaS platform for equipment manufacturer
+  - Empowered client's developers through peer-coding and knowledge exchange
+  - Strengthened user experience by enabling real-time data capture and display
+  - Reduced data loss with automatic Bluetooth connection recovery
 - Led development of a new React-Native app for insurance company
   - Automated delivery to App Store Connect and Google Play with Fastlane
   - Enabled client to take ownership of project through training, documentation
