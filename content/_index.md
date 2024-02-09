@@ -85,16 +85,10 @@ Full Stack Engineer with 3 years of Web and Mobile Experience
 {{<date-range start="2021-03-29" end="2023-10-20">}}
 
 - Worked in client-facing role on cross-functional Agile (Scrum) team
-- Accelerated time-to-market up to 20% with project templates
-  - Improved documentation by generating server stubs, clients from OpenAPI spec
-  - Improved onboarding and delivery with Docker and Docker Compose
-  - Enabled rapid iteration with GitOps-driven CI/CD using GitHub Actions, CircleCI
-  - Improved brand alignment with customized form builders, material design systems
-- Led company transition to Golang, improving performance, type-safety, and DX
-- Promoted culture of continuous improvement, code reviews, and linting
-
-Project Highlights:
-
+- Accelerated time-to-market by up to 20% with project templates
+  - Streamlined delivery with GitOps-driven CI/CD using GitHub Actions, CircleCI
+  - Improved maintainability through code generation from OpenAPI specifications
+  - Boosted productivity and reliability with containerization technologies
 - Developed React app, React-Native app, Node servers for equipment manufacturer
   - Created Bluetooth abstraction with data anomaly filtering, connection recovery
   - Engineered data pipeline for real-time capture and display across applications
