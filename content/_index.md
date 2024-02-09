@@ -125,6 +125,11 @@ Project Highlights:
 - Created AWS storage primitive abstracting cloud complexity for high level orchestration
 - Developed storage optimization solution for Amazon Elastic Block Storage
 
+## Projects
+
+- Home Kubernetes cluster: [github.com/cjshearer/k8s-gitops](https://github.com/cjshearer/k8s-gitops)
+- A simple, content-driven resume builder: [github.com/cjshearer/modern-hugo-resume](https://github.com/cjshearer/modern-hugo-resume)
+
 ## Education
 
 ### BS Computer Science, University of South Carolina
