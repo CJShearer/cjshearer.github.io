@@ -15,8 +15,6 @@ skills:
       - SQL
       - Rust
       - Python
-      - Java
-      - C++
   - frameworks:
       - React/Native
       - Vue
@@ -35,8 +33,6 @@ skills:
       - Git
       - Linux
       - Docker
-      - Tailscale
-      - Postman
   - databases:
       - MySQL
       - PostgreSQL
