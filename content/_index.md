@@ -50,7 +50,7 @@ skills:
 
 # Cody Shearer
 
-Software Developer with 3 Years of Experience in Full Stack Web and Mobile Development
+Full Stack Engineer with 3 years of Web and Mobile Experience
 {class="font-light mb-2"}
 
 [![GitHub: github.com/cjshearer](svgs/brands/github.svg)](https://github.com/cjshearer "GitHub")
