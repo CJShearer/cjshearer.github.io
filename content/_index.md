@@ -37,6 +37,7 @@ skills:
       - MySQL
       - PostgreSQL
       - MongoDB
+      - CouchDB
   - services:
       - Auth0
       - LogRocket
