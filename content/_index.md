@@ -53,6 +53,8 @@ skills:
 Full Stack Engineer with 3 years of Web and Mobile Experience
 {class="font-light mb-2"}
 
+[![Website: cjshearer.dev](svgs/solid/globe.svg)](https://cjshearer.dev "Website")
+{class="hidden"}
 [![GitHub: github.com/cjshearer](svgs/brands/github.svg)](https://github.com/cjshearer "GitHub")
 [![LinkedIn: cjshearer.dev](svgs/brands/linkedin.svg)](https://linkedin.com/in/cjshearer "LinkedIn")
 [![Email: cjshearer@live.com](svgs/solid/envelope.svg)](mailto:cjshearer@live.com "Email")
