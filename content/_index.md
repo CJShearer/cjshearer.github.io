@@ -53,24 +53,35 @@ skills:
 Full Stack Engineer with 3 years of Web and Mobile Experience
 {class="font-light mb-2"}
 
-[![Website: cjshearer.dev](svgs/solid/globe.svg)](https://cjshearer.dev "Website")
-{class="hidden"}
 [![GitHub: github.com/cjshearer](svgs/brands/github.svg)](https://github.com/cjshearer "GitHub")
 [![LinkedIn: cjshearer.dev](svgs/brands/linkedin.svg)](https://linkedin.com/in/cjshearer "LinkedIn")
 [![Email: cjshearer@live.com](svgs/solid/envelope.svg)](mailto:cjshearer@live.com "Email")
+[![Website: cjshearer.dev](svgs/solid/globe.svg)](https://cjshearer.dev "Website")
 {class="[&>*]:button [&>*]:inline-flex [&>*]:mr-1 md:hidden"}
 
 {{</header>}}
 
-{{<aside class="not-prose gap-4">}}
+{{<aside class="not-prose gap-4 whitespace-nowrap">}}
 
 ![](avatar.jpg "A close-up photo of me wearing a suit and tie")
 {class="avatar w-24" sizes="256"}
 
-[![](svgs/brands/github.svg) GitHub](https://github.com/cjshearer)
-[![](svgs/brands/linkedin.svg) LinkedIn](https://linkedin.com/in/cjshearer)
-[![](svgs/solid/envelope.svg) Email](mailto:cjshearer@live.com)
-{class="[&_a]:mb-2 [&_a]:inline-flex [&_a]:items-center last-of-type:[&_a]:mb-0 [&_svg]:mx-1 [&_svg]:h-[1em] [&_svg]:w-[1em] [&_svg]:fill-current"}
+<div>
+
+[github.com/](https://github.com/cjshearer "GithHub")
+
+[linkedin.com/in/](https://linkedin.com/in/cjshearer "LinkedIn")
+
+cjshearer
+{role="separator" class="text-center before:content-['└_'] after:content-['_┐']"}
+
+[@live.com](mailto:cjshearer@live.com "Email")
+{.text-right}
+
+[.dev](https://cjshearer.dev "Website")
+{.text-right}
+
+</div>
 
 {{<skills layout="vertical">}}
 
