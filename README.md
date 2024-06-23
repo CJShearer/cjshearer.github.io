@@ -1,6 +1,6 @@
 # cjshearer.dev
 
-My resume site, built from [modern-hugo-resume](https://github.com/cjshearer/cjshearer.dev). See 
+My resume site, built from [modern-hugo-resume](https://github.com/cjshearer/cjshearer.dev).
 
 ## Requirements
 
