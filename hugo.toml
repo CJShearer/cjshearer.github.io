@@ -1,0 +1,28 @@
+baseURL = "https://cjshearer.dev"
+defaultContentLanguage = "en"
+disableKinds = [ "RSS", "section", "sitemap", "taxonomy", "term" ]
+languageCode = "en-us"
+
+[build.buildStats]
+enable = true
+
+[[build.cacheBusters]]
+source = "assets/watching/hugo_stats.json"
+target = "main.css"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
+
+[markup.goldmark.parser.attribute]
+block = true
+title = true
+
+[[module.imports]]
+path = "github.com/cjshearer/modern-hugo-resume"
+
+[[module.mounts]]
+source = "hugo_stats.json"
+target = "assets/watching/hugo_stats.json"
