@@ -1,67 +1,24 @@
 {
-  "author": "Cody Shearer",
-  "description": "A resume website",
+  "comments": {
+    "dependencies": {},
+    "devDependencies": {
+      "@fullhuman/postcss-purgecss": "github.com/cjshearer/modern-hugo-resume",
+      "@tailwindcss/typography": "github.com/cjshearer/modern-hugo-resume",
+      "autoprefixer": "github.com/cjshearer/modern-hugo-resume",
+      "postcss": "github.com/cjshearer/modern-hugo-resume",
+      "postcss-cli": "github.com/cjshearer/modern-hugo-resume",
+      "tailwindcss": "github.com/cjshearer/modern-hugo-resume"
+    }
+  },
+  "dependencies": {},
   "devDependencies": {
-    "@commitlint/cli": "^17.8.1",
-    "@commitlint/config-conventional": "^17.8.1",
-    "@fortawesome/fontawesome-free": "^6.4.2",
     "@fullhuman/postcss-purgecss": "^5.0.0",
-    "@tailwindcss/typography": "^0.5.10",
-    "@types/node": "^20.8.9",
-    "autoprefixer": "^10.4.16",
-    "hugo-bin": "^0.116.3",
-    "lint-staged": "^13.3.0",
-    "postcss": "^8.4.31",
-    "postcss-cli": "^10.1.0",
-    "postcss-html": "^1.5.0",
-    "prettier": "^2.8.8",
-    "prettier-plugin-go-template": "^0.0.13",
-    "prettier-plugin-tailwindcss": "^0.3.0",
-    "simple-git-hooks": "^2.9.0",
-    "stylelint": "^15.11.0",
-    "stylelint-config-html": "^1.1.0",
-    "stylelint-config-standard": "^34.0.0",
-    "stylelint-config-tailwindcss": "^0.0.7",
-    "tailwindcss": "^3.3.5"
+    "@tailwindcss/typography": "^0.5.13",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.4"
   },
-  "engines": {
-    "node": ">=20.2.0",
-    "npm": "please-use-pnpm",
-    "pnpm": "8.6.7",
-    "yarn": "please-use-pnpm"
-  },
-  "hugo-bin": {
-    "buildTags": "extended"
-  },
-  "keywords": [],
-  "lint-staged": {
-    "*": [
-      "pnpm prettier --write --ignore-unknown"
-    ],
-    "*.{css, html}": [
-      "pnpm stylelint --fix"
-    ]
-  },
-  "name": "cjshearer.github.io",
-  "packageManager": "pnpm@8.6.7",
-  "scripts": {
-    "build": "pnpm run hugo:build",
-    "clean": "pnpm run hugo:clean && rm -rf node_modules",
-    "dev": "pnpm run hugo:serve",
-    "dev:tailscale": "./tailscale-dev.sh",
-    "format:check": "pnpm format --check",
-    "format:fix": "pnpm format --write",
-    "format": "pnpm prettier .",
-    "hugo:build": "hugo -d build --minify",
-    "hugo:clean": "rm -rf build resources public",
-    "hugo:serve": "hugo server",
-    "lint:fix": "pnpm lint --fix",
-    "lint": "pnpm stylelint **/*.{html,css}",
-    "prepare": "simple-git-hooks"
-  },
-  "simple-git-hooks": {
-    "commit-msg": "pnpm commitlint --edit ${1}",
-    "pre-commit": "pnpm lint-staged"
-  },
-  "version": "1.0.0"
+  "name": "cjshearer.dev",
+  "version": "0.1.0"
 }

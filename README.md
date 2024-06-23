@@ -1,75 +1,25 @@
-# modern-hugo-resume
+# cjshearer.dev
 
-_A minimal static resume builder; inspired by [sproogen's modern-resume-theme](https://github.com/sproogen/modern-resume-theme) and [mnjul's html-resume](https://github.com/mnjul/html-resume). Powered by Hugo, Tailwind CSS, and GitHub Pages._
+My resume site, built from [modern-hugo-resume](https://github.com/cjshearer/cjshearer.dev). See 
 
-_Host your own resume on GitHub for free!_
+## Requirements
 
-## Repository Setup
+Can be installed manually, or with `nix develop`:
 
-1. [Fork](https://github.com/cjshearer/modern-hugo-resume/fork) this repository, naming it `<your_username>.github.io`.
-2. In your new repository, go to `Settings > Pages` and under "Build and deployment" select "GitHub Actions" as the source.
-3. Go to `Actions` and click "Enable workflows".
-
-When you update the `main` branch of your repository with your information, the resume will automatically be built and deployed to `https://<your_username>.github.io`.
-
-4. [optional] If you just want to see the page deployed now, without updating the resume content, you can manually trigger the build and deploy workflow by going to `Actions > ./github/workflows/deploy.yaml` and clicking "run workflow".
-
-## Local Usage
-
-### Prerequisites
-
-#### Node
-
-We recommend installing the latest version (or at least 16) of Node with [nvm](https://github.com/nvm-sh/nvm).
-
-[Windows]: You'll need to use [nvm-windows](https://github.com/coreybutler/nvm-windows) if you want to use nvm.
-
-#### Git
-
-You probably already have this.
-
-[Windows]: Install with `winget install -e --id Git.Git`
-
-### Setup
-
-Clone the repository:
-
-```sh
-git clone git@github.com:<your_username>/<your_username>.github.io.git
-```
-
-We use [corepack](https://nodejs.org/api/corepack.html) (comes with Node >= 16)
-to manage `pnpm`. To install, run the following from the project's root
-directory.
-
-[Windows]: You may need to run the following with elevated privileges. For a convenient way to do this, install gsudo with `winget install -e --id gerardog.gsudo` and prepend `gsudo` to the following command:
-
-```sh
-corepack enable
-```
-
-To install the project dependencies, run the following command from the project's root directory:
-
-```sh
-pnpm install
-```
+1. Install [`hugo`](https://gohugo.io/installation/) 1.27.0+extended.
+2. Install [`go`](https://go.dev/dl/) >= 1.22.3.
+3. Install `node` >= 20.2.0 with [nvm](https://github.com/nvm-sh/nvm).
+4. Install `pnpm` with `corepack enable`.
+5. Run `pnpm install`.
 
 ## Local Development
 
-To make changes and instantly see them at http://localhost:1313, run:
+Development of this repository uses the following commands frequently.
 
 ```sh
-pnpm dev
-```
+nix build       # build the production site, exactly the same way it's done in CI
+nix flake check # run formatter/linter checks, exactly the same way it's done in CI
+nix develop     # open a development environment with requirements satisfied
 
-To make the server accessible over tailscale, run
-
-```sh
-pnpm dev:tailscale
-```
-
-To create a production build, run:
-
-```sh
-pnpm build
+hugo server     # rebuild changes automatically
 ```

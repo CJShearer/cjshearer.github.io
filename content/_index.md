@@ -2,24 +2,24 @@
 title: Full Stack Engineer
 description: Full Stack Engineer Resume
 faviconText: 💼
+layout: modern-hugo-resume
 ---
 
 <header class="mb-4 text-center md:text-left print:text-left">
 
 ![](avatar.jpg "A close-up photo of me wearing a suit and tie")
-{ class="avatar not-prose float-right hidden h-24 print:hidden md:block" sizes="256"}
+{class="avatar not-prose float-right hidden h-24 print:hidden md:block" sizes="256"}
 
 # Cody Shearer
 
 Full Stack Engineer with 3 years of Web and Mobile Experience
 {class="mb-2"}
 
-<!-- prettier-ignore -->
 - [![](svgs/brands/github.svg)cjshearer](https://github.com/cjshearer "My GithHub")
 - [![](svgs/brands/linkedin.svg)in/cjshearer](https://linkedin.com/in/cjshearer "My LinkedIn")
 - [![](svgs/solid/house.svg)cjshearer.dev](https://cjshearer.dev "My Website")
 - [![](svgs/solid/envelope.svg)cjshearer@live.com](mailto:cjshearer@live.com "My Email")
-{ class="not-prose [&>*]:inline-svg inline-flex w-fit flex-wrap justify-center gap-4 whitespace-nowrap [&_svg]:mr-1"}
+{class="not-prose *:inline-svg inline-flex w-fit flex-wrap justify-center gap-4 whitespace-nowrap [&_svg]:mr-1"}
 
 </header>
 
@@ -27,7 +27,6 @@ Full Stack Engineer with 3 years of Web and Mobile Experience
 
 ## Skills {class="md:hidden"}
 
-<!-- prettier-ignore -->
 - Languages:
   - TypeScript
   - JavaScript
@@ -67,7 +66,7 @@ Full Stack Engineer with 3 years of Web and Mobile Experience
   - Sentry
   - Stripe
   - SendGrid
-{ class="table pl-0 md:float-right md:block print:md:float-none print:md:table [&>li>*]:table-cell md:[&>li>*]:block print:md:[&>li>*]:table-cell [&>li>ul>li]:inline md:[&>li>ul>li]:block print:md:[&>li>ul>li]:inline [&>li>ul]:list-none md:[&>li>ul]:list-disc [&>li]:table-row"}
+{class="max-md:skills-table md:float-right [&>li]:list-none print:md:float-none"}
 
 ## Experience
 
