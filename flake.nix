@@ -73,7 +73,7 @@
             in
             ''
               ln -s ${hugoVendor} _vendor
-              hugo -d $out
+              hugo --minify -d $out
             '';
 
           dontInstall = true;
