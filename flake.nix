@@ -13,11 +13,13 @@
         pkgs = nixpkgs.legacyPackages.${system};
         biome = pkgs.biome;
         commitlint = pkgs.commitlint;
+        git = pkgs.git;
         go = pkgs.go;
         hugo = pkgs.hugo;
         nodejs = pkgs.nodejs_22;
         pnpm = pkgs.pnpm;
         nativeBuildInputs = [ go hugo nodejs pnpm ];
+        sourceRoot = ".";
       in
       {
         checks = {
@@ -36,49 +38,43 @@
           name = finalAttrs.pname;
 
           src = ./.;
+          setSourceRoot = "sourceRoot=$(echo *-source/${sourceRoot})";
 
           nativeBuildInputs = nativeBuildInputs ++ [ pnpm.configHook ];
 
           pnpmDeps = pnpm.fetchDeps {
-            inherit (finalAttrs) pname src;
+            inherit (finalAttrs) pname src setSourceRoot;
             hash = "sha256-RvE4R277Kam3s32XbGUIQTToG0cpbhpTaLEU5HsNZZ4=";
           };
 
-          preBuild =
+          buildPhase =
             let
-              hugoModules = [
-                {
-                  owner = "cjshearer";
-                  repo = "modern-hugo-resume";
-                  rev = "d5aff7eecfd0713d269cde8cf56b0c99b667e824";
-                  sha256 = "sha256-zZZOav71P6dczHYvgwFqjBRz9dDLX3ZlYJGKUI6hO+c=";
-                }
-                {
-                  owner = "FortAwesome";
-                  repo = "Font-Awesome";
-                  rev = "6.5.2";
-                  sha256 = "sha256-kUa/L/Krxb5v8SmtACCSC6CI3qTTOTr4Ss/FMRBlKuw=";
-                }
-              ];
+              hugoVendor = pkgs.stdenv.mkDerivation {
+                name = "${finalAttrs.pname}-hugoVendor";
+                inherit (finalAttrs) src setSourceRoot;
+                nativeBuildInputs = [ go hugo git ];
+
+                buildPhase = ''
+                  hugo mod vendor
+                '';
+
+                installPhase = ''
+                  cp -r _vendor $out
+                '';
+
+                outputHashMode = "recursive";
+                outputHashAlgo = "sha256";
+                # To get a new hash:
+                # 1. Invalidate the current hash (change any character between "sha256-" and "=")
+                # 2. Run `nix build` or push to GitHub (it will fail and provide the new hash)
+                # 3. Substitute the new hash (`nix build` should now work)
+                outputHash = "sha256-XdZNj5JkHOswQCKYuKKQXP0URMs0dh0I6DgI4IejOyE=";
+              };
             in
             ''
-              go mod vendor
-              mv vendor _vendor
-              sed -i '/## explicit/d' _vendor/modules.txt
-
-              mkdir -p _vendor/github.com/{${(
-                pkgs.lib.concatMapStrings (module: "${module.owner},") hugoModules
-              )}}
-
-              ${(pkgs.lib.concatMapStrings (module:
-                "ln -s ${pkgs.fetchFromGitHub module} " +
-                "_vendor/github.com/${module.owner}/${module.repo}\n"
-              ) hugoModules)}
+              ln -s ${hugoVendor} _vendor
+              hugo -d $out
             '';
-
-          postBuild = ''
-            hugo -d $out
-          '';
 
           dontInstall = true;
           dontFixup = true;
@@ -91,7 +87,11 @@
           ];
 
           shellHook = self.checks.${system}.pre-commit-check.shellHook + ''
+            pushd ${sourceRoot}
+            
             pnpm install
+
+            popd
           '';
         };
       });
