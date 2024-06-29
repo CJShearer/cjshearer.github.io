@@ -1,10 +1,22 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.7.3/schema.json",
+  "css": {
+    "formatter": {
+      "enabled": true,
+      "indentStyle": "space"
+    }
+  },
   "formatter": {
     "enabled": true,
     "formatWithErrors": false,
     "indentStyle": "space",
     "lineWidth": 100
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true
+    }
   },
   "vcs": {
     "clientKind": "git",
