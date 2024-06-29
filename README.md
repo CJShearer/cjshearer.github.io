@@ -8,11 +8,9 @@ My resume site, built with [modern-hugo-resume](https://github.com/cjshearer/mod
 
 These can be installed manually, or automatically with [nix](https://github.com/DeterminateSystems/nix-installer?tab=readme-ov-file#the-determinate-nix-installer) by running `nix develop`:
 
-1. Install [`hugo`](https://gohugo.io/installation/) 1.27.0+extended.
+1. Install [`hugo`](https://gohugo.io/installation/) >= 1.28.0+extended.
 2. Install [`go`](https://go.dev/dl/) >= 1.22.3.
-3. Install `node` >= 20.2.0 with [nvm](https://github.com/nvm-sh/nvm).
-4. Install `pnpm` with `corepack enable`.
-5. Run `pnpm install`.
+3. Install [`tailwindcss`](https://github.com/tailwindlabs/tailwindcss/releases) >= 3.4.4.
 
 ### Common Commands
 ```sh

@@ -5,25 +5,25 @@ faviconText: 💼
 layout: modern-hugo-resume
 ---
 
-<header class="mb-4 text-center md:text-left print:text-left">
+<header class="mb-3 text-center md:text-left print:text-left">
 
 ![](avatar.jpg "A close-up photo of me wearing a suit and tie")
-{class="avatar not-prose float-right hidden h-24 print:hidden md:block" sizes="256"}
+{class="avatar float-right hidden h-24 print:hidden md:block" sizes="256"}
 
 # Cody Shearer
 
 Full Stack Engineer with 3 years of Web and Mobile Experience
-{class="mb-2"}
+{class="mb-1"}
 
 - [![](svgs/brands/github.svg)cjshearer](https://github.com/cjshearer "My GithHub")
 - [![](svgs/brands/linkedin.svg)in/cjshearer](https://linkedin.com/in/cjshearer "My LinkedIn")
 - [![](svgs/solid/house.svg)cjshearer.dev](https://cjshearer.dev "My Website")
 - [![](svgs/solid/envelope.svg)cjshearer@live.com](mailto:cjshearer@live.com "My Email")
-{class="not-prose *:inline-svg inline-flex w-fit flex-wrap justify-center gap-4 whitespace-nowrap [&_svg]:mr-1"}
+{class="*:inline-svg my-0 inline-flex w-fit flex-wrap justify-center gap-4 whitespace-nowrap ps-0 *:ps-0 [&_svg]:mr-1"}
 
 </header>
 
-<main class="[&>*:is(h2,h3,p)]:break-after-avoid-page [&>*:is(p,ul)]:break-inside-avoid-page">
+<main>
 
 ## Skills {class="md:hidden"}
 
@@ -66,7 +66,7 @@ Full Stack Engineer with 3 years of Web and Mobile Experience
   - Sentry
   - Stripe
   - SendGrid
-{class="max-md:skills-table md:float-right [&>li]:list-none print:md:float-none"}
+{class="max-md:list-as-table mt-0 md:float-right print:md:float-none [&>li]:list-none"}
 
 ## Experience
 
