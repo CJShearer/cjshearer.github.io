@@ -2,77 +2,28 @@
 title: Full Stack Engineer
 description: Full Stack Engineer Resume
 faviconText: 💼
-layout: modern-hugo-resume
+type: modern-hugo-resume
 ---
+<style>
+:root {
+  --page-width: 8.5in;
+  --page-height: 11in;
+  --page-margin: 0.4in;
+}
+</style>
 
-<header class="mb-3 text-center md:text-left print:text-left">
-
-![](avatar.jpg "A close-up photo of me wearing a suit and tie")
-{class="avatar float-right hidden h-24 print:hidden md:block" sizes="256"}
+<body>
+<main>
 
 # Cody Shearer
 
 Full Stack Engineer with 3 years of Web and Mobile Experience
-{class="mb-1"}
-
-- [![](svgs/brands/github.svg)cjshearer](https://github.com/cjshearer "My GithHub")
-- [![](svgs/brands/linkedin.svg)in/cjshearer](https://linkedin.com/in/cjshearer "My LinkedIn")
-- [![](svgs/solid/house.svg)cjshearer.dev](https://cjshearer.dev "My Website")
-- [![](svgs/solid/envelope.svg)cjshearer@live.com](mailto:cjshearer@live.com "My Email")
-{class="*:inline-svg my-0 inline-flex w-fit flex-wrap justify-center gap-4 whitespace-nowrap ps-0 *:ps-0 [&_svg]:mr-1"}
-
-</header>
-
-<main>
-
-## Skills {class="md:hidden"}
-
-- Languages:
-  - TypeScript
-  - JavaScript
-  - HTML
-  - CSS
-  - Golang
-  - Node.js
-  - SQL
-  - Rust
-  - Python
-- Frameworks:
-  - React/Native
-  - Vue
-  - Nuxt
-  - Hugo
-  - TailwindCSS
-  - Storybook
-- Concepts:
-  - Agile (Scrum)
-  - RESTful APIs
-  - Material Design
-  - Cloud Native
-  - GitOps
-  - CI/CD
-- Tools:
-  - Git
-  - Linux
-  - Docker
-- Databases:
-  - MySQL
-  - PostgreSQL
-  - MongoDB
-  - CouchDB
-- Services:
-  - Auth0
-  - LogRocket
-  - Sentry
-  - Stripe
-  - SendGrid
-{class="max-md:list-as-table mt-0 md:float-right print:md:float-none [&>li]:list-none"}
 
 ## Experience
 
 ### Software Developer – Full Stack, Krumware
 
-March 2021 to October 2023
+#### March 2021 to October 2023
 
 - Worked in client-facing role on cross-functional Agile (Scrum) team
 - Accelerated time-to-market by up to 20% with project templates
@@ -95,7 +46,7 @@ March 2021 to October 2023
 
 ### Research Assistant, AI and Systems Laboratory
 
-August 2020 to April 2021
+#### August 2020 to April 2021
 
 - Researched transfer learning, causal inference, and machine learning
 - Analyzed cross-platform performance of deep-learning recommender
@@ -103,7 +54,7 @@ August 2020 to April 2021
 
 ### Software Developer – Intern, Velocity
 
-June 2018 to August 2018
+#### June 2018 to August 2018
 
 - Developed storage optimization solution for Amazon Elastic Block Storage
 - Developed AWS storage primitive for high level orchestration
@@ -117,17 +68,40 @@ June 2018 to August 2018
 
 ### BS Computer Science, University of South Carolina
 
-August 2017 to May 2021
+#### August 2017 to May 2021
 
 - Graduated [_magna cum laude_](https://www.sc.edu/about/offices_and_divisions/registrar/transcripts_and_records/ediploma/?dvid=BNLCF568) with a mathematics minor
 - Achieved [Outstanding Senior Award](https://sc.edu/about/offices_and_divisions/leadership_and_service_center/awards_and_recognition/senior-awards/index.php) and the [Palmetto Fellows Scholarship](https://sc.edu/about/offices_and_divisions/financial_aid/scholarships/scholarships_for_sc_residents/palmetto_fellows/index.php)
 - Earned honors including President's List, Dean's List, and [Phi Beta Kappa](https://www.pbk.org/About)
 - Served as President and Treasurer of the Carolina Movement Club (_parkour!_)
 
+## Skills
+
+<div class="inline-list">
+
+**Languages**: TypeScript JavaScript HTML CSS Golang Node.js SQL Rust Python
+
+**Concepts**: <span>Agile (Scrum)</span> <span>RESTful APIs</span> <span>Material Design</span> <span>Cloud Native</span> GitOps <span>CI/CD</span>
+
+**Frameworks**: React <span>React-Native</span> Vue Nuxt Hugo TailwindCSS Storybook
+
+**Services**: Auth0 LogRocket Sentry Stripe SendGrid
+
+**Tools**: Git Linux Docker Tailscale Postman
+
+**Databases**: MySQL PostgreSQL MongoDB CouchDB
+
+</div>
+
 </main>
 
-<footer class="h-5 text-center print:fixed print:bottom-0 print:w-full">
+<footer>
 
-_Cody Shearer - cjshearer@live.com - References available on request_
+[![](svgs/brands/github.svg)cjshearer](https://github.com/cjshearer "My GithHub")
+[![](svgs/brands/linkedin.svg)in/cjshearer](https://linkedin.com/in/cjshearer "My LinkedIn")
+[![](svgs/solid/house.svg)cjshearer.dev](https://cjshearer.dev "My Website")
+[![](svgs/solid/envelope.svg)cjshearer@live.com](mailto:cjshearer@live.com "My Email")
+{class="inline-svg flex flex-wrap justify-center gap-4 whitespace-nowrap mb-0"}
 
 </footer>
+</body>

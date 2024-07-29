@@ -75,7 +75,7 @@
                 # 1. Invalidate the current hash (change any character between "sha256-" and "=")
                 # 2. Run `nix build` or push to GitHub (it will fail and provide the new hash)
                 # 3. Substitute the new hash (`nix build` should now work)
-                outputHash = "sha256-Zd79+nlHD8ja3zBgwwQrO5QpppMoCG5lK7UF0W/CV0s=";
+                outputHash = "sha256-UneO3xGtLzfaUvCzowyZBVBNGQ2yWJkXNmZ55hwSgtg=";
               };
             in
             ''
