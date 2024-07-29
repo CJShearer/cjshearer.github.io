@@ -2,3 +2,5 @@ github.com/FortAwesome/Font-Awesome v0.0.0-20240402185447-c0f460dca7f7 h1:2aWEKC
 github.com/FortAwesome/Font-Awesome v0.0.0-20240402185447-c0f460dca7f7/go.mod h1:IUgezN/MFpCDIlFezw3L8j83oeiIuYoj28Miwr/KUYo=
 github.com/cjshearer/modern-hugo-resume v0.0.0-20240729192909-254480383616 h1:wEMFFtfCsTc2TzNh/fu0QTJ7E8Jvz5WZpHTRqexccqo=
 github.com/cjshearer/modern-hugo-resume v0.0.0-20240729192909-254480383616/go.mod h1:I/Lt4DZ6PP7rEkKtEOh+vCfj9leKAyomHXpzewJd53o=
+github.com/cjshearer/modern-hugo-resume v0.0.0-20240729203753-d2fa14b98a2e h1:EdwNClK2jbsIu2VC4ZWBYlB6UzpRe510Cius3kWA7pU=
+github.com/cjshearer/modern-hugo-resume v0.0.0-20240729203753-d2fa14b98a2e/go.mod h1:I/Lt4DZ6PP7rEkKtEOh+vCfj9leKAyomHXpzewJd53o=
