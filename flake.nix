@@ -16,8 +16,7 @@
         git = pkgs.git;
         go = pkgs.go;
         hugo = pkgs.hugo;
-        tailwindcss = pkgs.tailwindcss;
-        nativeBuildInputs = [ go hugo tailwindcss ];
+        nativeBuildInputs = [ go hugo ];
       in
       {
         checks = {
@@ -72,14 +71,15 @@
                 outputHashMode = "recursive";
                 outputHashAlgo = "sha256";
                 # To get a new hash:
-                # 1. Invalidate the current hash (change any character between "sha256-" and "=")
+                # 1. Replace the existing hash with `pkgs.lib.fakeHash`
                 # 2. Run `nix build` or push to GitHub (it will fail and provide the new hash)
                 # 3. Substitute the new hash (`nix build` should now work)
-                outputHash = "sha256-GNQpKE5Y6aVGCHlo3wNzq/Zosr8JFpnHSclIvVKSCv4=";
+                outputHash = "sha256-o0PgKV8osOoRMnkqzHMOHgDOymEGC9jxgxxPrdiHfnY=";
               };
             in
             ''
               ln -s ${hugoVendor} _vendor
+
               hugo --minify -d $out
             '';
 

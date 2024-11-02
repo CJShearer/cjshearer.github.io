@@ -1,21 +1,7 @@
----
-title: Full Stack Engineer
-description: Full Stack Engineer Resume
-faviconText: 💼
-type: modern-hugo-resume
----
-<style>
-:root {
-  --page-width: 8.5in;
-  --page-height: 11in;
-  --page-margin: 0.4in;
-}
-</style>
-
-<body>
-<main>
-
-# Cody Shearer
++++
+title = "Full Stack Engineer"
+description = "Full Stack Engineer Resume"
++++
 
 Full Stack Engineer with 3 years of Web and Mobile Experience
 
@@ -56,6 +42,7 @@ Full Stack Engineer with 3 years of Web and Mobile Experience
 
 #### June 2018 to August 2018
 
+- Created AWS storage primitive abstracting cloud complexity for high level orchestration
 - Developed storage optimization solution for Amazon Elastic Block Storage
 - Developed AWS storage primitive for high level orchestration
 
@@ -77,31 +64,59 @@ Full Stack Engineer with 3 years of Web and Mobile Experience
 
 ## Skills
 
-<div class="inline-list">
+<div class="skills-grid">
 
-**Languages**: TypeScript JavaScript HTML CSS Golang Node.js SQL Rust Python
+**Languages**
+- TypeScript
+- JavaScript
+- HTML
+- CSS
+- Golang
+- Node.js
+- SQL
+- Rust
+- Python
+{.inline-list}
 
-**Concepts**: <span>Agile (Scrum)</span> <span>RESTful APIs</span> <span>Material Design</span> <span>Cloud Native</span> GitOps <span>CI/CD</span>
+**Concepts**
+- Agile (Scrum)
+- RESTful APIs
+- Material Design
+- Cloud Native
+- GitOps
+- CI/CD
+{.inline-list}
 
-**Frameworks**: React <span>React-Native</span> Vue Nuxt Hugo TailwindCSS Storybook
+**Frameworks**
+- React
+- React-Native
+- Vue
+- Hugo
+- TailwindCSS
+- Storybook
+{.inline-list}
 
-**Services**: Auth0 LogRocket Sentry Stripe SendGrid
+**Services**
+- Auth0
+- LogRocket
+- Sentry
+- Stripe
+- SendGrid
+{.inline-list}
 
-**Tools**: Git Linux Docker Tailscale Postman
+**Tools**
+- Git
+- Linux
+- Docker
+- Tailscale
+- Postman
+{.inline-list}
 
-**Databases**: MySQL PostgreSQL MongoDB CouchDB
+**Databases**
+- MySQL
+- PostgreSQL
+- MongoDB
+- CouchDB
+{.inline-list}
 
 </div>
-
-</main>
-
-<footer>
-
-[![](svgs/brands/github.svg)cjshearer](https://github.com/cjshearer "My GithHub")
-[![](svgs/brands/linkedin.svg)in/cjshearer](https://linkedin.com/in/cjshearer "My LinkedIn")
-[![](svgs/solid/house.svg)cjshearer.dev](https://cjshearer.dev "My Website")
-[![](svgs/solid/envelope.svg)cjshearer@live.com](mailto:cjshearer@live.com "My Email")
-{class="inline-svg flex flex-wrap justify-center gap-4 whitespace-nowrap mb-0"}
-
-</footer>
-</body>
