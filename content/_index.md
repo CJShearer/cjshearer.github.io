@@ -7,6 +7,12 @@ Full Stack Engineer with 3 years of Web and Mobile Experience
 
 ## Experience
 
+### Software Developer – DevOps, BlueCross BlueShield SC
+
+#### July 2024 to Present
+
+
+
 ### Software Developer – Full Stack, Krumware
 
 #### March 2021 to October 2023
